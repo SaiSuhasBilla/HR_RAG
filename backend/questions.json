@@ -1,0 +1,1407 @@
+{
+  "python": [
+    {
+      "q": "What is the difference between a list and a tuple in Python?",
+      "a": "A list can be changed or modified, while a tuple is fixed and cannot be changed after creation."
+    },
+    {
+      "q": "What is a dictionary in Python?",
+      "a": "A dictionary is a collection of data stored as key-value pairs, allowing for fast lookups."
+    },
+    {
+      "q": "What are decorators in Python?",
+      "a": "Decorators allow you to wrap a function to modify its behavior without permanently changing its source code."
+    },
+    {
+      "q": "How is memory managed in Python?",
+      "a": "Python uses a private heap managed by an automatic garbage collector utilizing reference counting."
+    }
+  ],
+  "machine learning": [
+    {
+      "q": "What is the difference between supervised and unsupervised learning?",
+      "a": "Supervised learning uses labeled data to predict outcomes, while unsupervised learning finds hidden patterns in unlabeled data."
+    },
+    {
+      "q": "What is overfitting and how do you prevent it?",
+      "a": "Overfitting happens when a model learns noise in the training data. It can be prevented using cross-validation, regularizations, or dropout."
+    },
+    {
+      "q": "Explain the Bias-Variance Tradeoff.",
+      "a": "It is the balance between a model being too simple (high bias) and being too complex and sensitive to noise (high variance)."
+    },
+    {
+      "q": "What is Cross-Validation?",
+      "a": "It is a technique to evaluate a model by splitting the data into multiple folds, training and testing on different chunks to ensure it generalizes well."
+    }
+  ],
+  "statistics": [
+    {
+      "q": "What is the Central Limit Theorem?",
+      "a": "It states that the distribution of sample means approximates a normal distribution as the sample size gets larger, regardless of the population's distribution."
+    },
+    {
+      "q": "What is a p-value?",
+      "a": "A p-value measures the probability of obtaining the observed results, assuming that the null hypothesis is true."
+    },
+    {
+      "q": "What is the difference between correlation and causation?",
+      "a": "Correlation indicates a relationship or pattern between two variables, while causation means one event directly causes the other to occur."
+    },
+    {
+      "q": "Explain standard deviation.",
+      "a": "Standard deviation is a measure of the amount of variation or dispersion in a set of values relative to its mean."
+    }
+  ],
+  "sql": [
+    {
+      "q": "Explain the difference between INNER JOIN and LEFT JOIN.",
+      "a": "Inner join returns only matching rows from both tables. Left join returns all rows from the left table and matched rows from the right."
+    },
+    {
+      "q": "What is a primary key?",
+      "a": "A primary key is a unique identifier for a specific record in a database table that cannot be null."
+    },
+    {
+      "q": "What is the GROUP BY statement used for?",
+      "a": "It is used in collaboration with aggregate functions like COUNT or SUM to group rows that have the same values into summary rows."
+    },
+    {
+      "q": "What is database normalization?",
+      "a": "Normalization is the process of organizing data to reduce redundancy and improve data integrity across tables."
+    }
+  ],
+  "deep learning": [
+    {
+      "q": "What is an activation function?",
+      "a": "An activation function decides whether a neuron should fire or not, adding non-linearity to the network so it can learn complex patterns."
+    },
+    {
+      "q": "What is the difference between a CNN and an RNN?",
+      "a": "CNNs are primarily used for spatial data like images, while RNNs are used for sequential data like text or time series."
+    },
+    {
+      "q": "What is an epoch in neural network training?",
+      "a": "An epoch is one complete pass of the entire training dataset through the neural network."
+    },
+    {
+      "q": "What is backpropagation?",
+      "a": "Backpropagation is the algorithm used to calculate the gradient of the loss function, allowing the network to update its weights and minimize errors."
+    }
+  ],
+  "data visualization": [
+    {
+      "q": "Why is data visualization important?",
+      "a": "It translates complex data into a visual context, making it easier to identify patterns, trends, and outliers that might go unnoticed in text-based data."
+    },
+    {
+      "q": "When should you use a scatter plot?",
+      "a": "A scatter plot is used to observe and show relationships between two numeric variables and identify potential correlations."
+    },
+    {
+      "q": "What is the data-to-ink ratio?",
+      "a": "Coined by Edward Tufte, it is the proportion of a graphic's ink devoted to the non-redundant display of data-information."
+    },
+    {
+      "q": "Explain the difference between a histogram and a bar chart.",
+      "a": "A histogram represents the frequency distribution of continuous variables, whereas a bar chart compares categorical variables."
+    }
+  ],
+  "pandas": [
+    {
+      "q": "What is a DataFrame?",
+      "a": "A DataFrame is a two-dimensional, size-mutable, and potentially heterogeneous tabular data structure with labeled axes."
+    },
+    {
+      "q": "How do you handle missing values in Pandas?",
+      "a": "Missing values can be handled by dropping the rows using dropna() or filling them with a default value using fillna()."
+    },
+    {
+      "q": "What is the difference between loc and iloc?",
+      "a": "The loc indexer selects rows and columns by their labels, while iloc selects them by their integer index positions."
+    },
+    {
+      "q": "What does the groupby() function do?",
+      "a": "It splits the data into groups based on some criteria, applies a function to each group independently, and combines the results."
+    }
+  ],
+  "numpy": [
+    {
+      "q": "Why use NumPy arrays instead of Python lists?",
+      "a": "NumPy arrays are faster, use less memory, and provide convenient mathematical functions for large matrix operations."
+    },
+    {
+      "q": "What is broadcasting in NumPy?",
+      "a": "Broadcasting is how NumPy handles arrays with different shapes during arithmetic operations, stretching the smaller array to match the larger one."
+    },
+    {
+      "q": "What does the shape attribute do?",
+      "a": "The shape attribute returns a tuple representing the dimensions of the array, such as its number of rows and columns."
+    },
+    {
+      "q": "What is vectorization?",
+      "a": "Vectorization replaces explicit loops with array operations, making mathematical calculations significantly faster by utilizing optimized C code."
+    }
+  ],
+  "pytorch": [
+    {
+      "q": "What is a Tensor in PyTorch?",
+      "a": "A Tensor is a multi-dimensional matrix containing elements of a single data type, similar to NumPy arrays but optimized for GPU acceleration."
+    },
+    {
+      "q": "Explain the role of autograd in PyTorch.",
+      "a": "Autograd provides automatic differentiation for all operations on Tensors, automatically computing gradients required for backpropagation."
+    },
+    {
+      "q": "What does optimizer.step() do?",
+      "a": "It updates the model's parameters based on the gradients computed during the backward pass."
+    },
+    {
+      "q": "What is the purpose of model.train() and model.eval()?",
+      "a": "They set the model to training or evaluation mode, which changes the behavior of layers like Dropout and BatchNorm."
+    }
+  ],
+  "tensorflow": [
+    {
+      "q": "What is a computational graph in TensorFlow?",
+      "a": "It is a series of TensorFlow operations arranged into a graph of nodes, where nodes represent math operations and edges represent the data tensors passed between them."
+    },
+    {
+      "q": "What is the difference between a Tensor and a Variable?",
+      "a": "A Tensor is an immutable multi-dimensional array, while a Variable is a special tensor used to store mutable state, like model weights."
+    },
+    {
+      "q": "Explain the purpose of the Keras API within TensorFlow.",
+      "a": "Keras is a high-level API built on top of TensorFlow that provides a simpler, more intuitive interface for building and training deep learning models."
+    },
+    {
+      "q": "What is TensorBoard?",
+      "a": "TensorBoard is TensorFlow's visualization toolkit used to track metrics like loss and accuracy, visualize the model graph, and view histograms of weights."
+    }
+  ],
+  "mlops": [
+    {
+      "q": "What is MLOps?",
+      "a": "MLOps is a set of practices that aims to deploy and maintain machine learning models in production reliably and efficiently."
+    },
+    {
+      "q": "Explain model drift.",
+      "a": "Model drift occurs when the statistical properties of the target variable or input data change over time, causing the model's predictions to degrade."
+    },
+    {
+      "q": "Why is model versioning important?",
+      "a": "It ensures reproducibility, allows rollback to previous model states if a deployment fails, and tracks the lineage of data and parameters."
+    },
+    {
+      "q": "What is a Feature Store?",
+      "a": "A feature store is a centralized repository that allows teams to share, discover, and serve machine learning features for training and real-time inference."
+    }
+  ],
+  "scikit-learn": [
+    {
+      "q": "What is the standard API workflow in scikit-learn?",
+      "a": "The standard workflow consists of initializing a model, calling fit() on the training data, and then calling predict() or transform() on new data."
+    },
+    {
+      "q": "What is the purpose of a scikit-learn Pipeline?",
+      "a": "A Pipeline chains together multiple data transformation steps and an estimator into a single object, preventing data leakage and simplifying code."
+    },
+    {
+      "q": "How does train_test_split work?",
+      "a": "It randomly partitions a dataset into two subsets: one for training the model and one for evaluating its performance on unseen data."
+    },
+    {
+      "q": "What is GridSearchCV used for?",
+      "a": "It performs an exhaustive search over specified parameter values for an estimator, using cross-validation to find the optimal hyperparameters."
+    }
+  ],
+  "llms": [
+    {
+      "q": "What is a Large Language Model (LLM)?",
+      "a": "An LLM is a deep learning model trained on massive amounts of text data, capable of understanding and generating human-like text based on context."
+    },
+    {
+      "q": "Explain the concept of 'temperature' in LLM generation.",
+      "a": "Temperature is a parameter that controls the randomness of the model's output; a lower temperature makes the output more deterministic, while a higher one makes it more creative."
+    },
+    {
+      "q": "What is tokenization in the context of LLMs?",
+      "a": "Tokenization is the process of breaking down text into smaller sub-word units or words, which are mapped to numbers that the model can process."
+    },
+    {
+      "q": "What is a hallucination?",
+      "a": "A hallucination occurs when an LLM generates information that is factually incorrect or nonsensical but presents it confidently as the truth."
+    }
+  ],
+  "prompt engineering": [
+    {
+      "q": "What is Few-Shot Prompting?",
+      "a": "Few-shot prompting involves providing the model with a few examples of the desired input and output format within the prompt before asking it to perform the task."
+    },
+    {
+      "q": "Explain Chain-of-Thought prompting.",
+      "a": "It is a technique where the model is explicitly instructed to break down its reasoning into a step-by-step process before arriving at the final answer."
+    },
+    {
+      "q": "Why is system prompt framing important?",
+      "a": "The system prompt sets the foundational behavior, persona, and constraints of the model, guiding how it interprets and responds to all subsequent user inputs."
+    },
+    {
+      "q": "What is zero-shot prompting?",
+      "a": "Zero-shot prompting asks the model to perform a task without providing any prior examples, relying entirely on its pre-trained knowledge."
+    }
+  ],
+  "langchain": [
+    {
+      "q": "What is LangChain?",
+      "a": "LangChain is a framework designed to simplify the creation of applications powered by large language models through composable chains and agents."
+    },
+    {
+      "q": "Explain the role of an Agent in LangChain.",
+      "a": "An Agent uses an LLM as a reasoning engine to determine which actions to take and what tools to use in order to achieve a specific goal."
+    },
+    {
+      "q": "What is a LangChain Document Loader?",
+      "a": "A Document Loader is a utility that extracts text from various sources like PDFs, websites, or databases and converts them into standard Document objects."
+    },
+    {
+      "q": "What is the purpose of Memory in LangChain?",
+      "a": "Memory components allow an LLM chain or agent to remember previous parts of a conversation, enabling stateful, multi-turn chat applications."
+    }
+  ],
+  "vector databases": [
+    {
+      "q": "What is a vector database?",
+      "a": "A vector database is specialized storage optimized for storing and querying high-dimensional mathematical vectors generated by AI embedding models."
+    },
+    {
+      "q": "How does a similarity search work in a vector database?",
+      "a": "It compares the vector of a user's query against stored vectors using distance metrics like Cosine Similarity or Euclidean Distance to find the closest semantic matches."
+    },
+    {
+      "q": "What is an embedding?",
+      "a": "An embedding is a numerical representation of data (like text or images) that captures its semantic meaning and relationships in a high-dimensional space."
+    },
+    {
+      "q": "Name an advantage of using a vector database over a relational database for AI.",
+      "a": "Vector databases can retrieve information based on semantic meaning and context, whereas relational databases rely on exact keyword matches."
+    }
+  ],
+  "rag": [
+    {
+      "q": "What does RAG stand for?",
+      "a": "Retrieval-Augmented Generation."
+    },
+    {
+      "q": "How does the RAG architecture improve LLM outputs?",
+      "a": "It grounds the LLM by retrieving factual, up-to-date information from an external database and injecting it into the prompt before the model generates an answer."
+    },
+    {
+      "q": "What is the purpose of text chunking in a RAG pipeline?",
+      "a": "Chunking breaks large documents into smaller, meaningful segments so that only the most relevant pieces of text are retrieved and fit within the LLM's context window."
+    },
+    {
+      "q": "What is the difference between sparse and dense retrieval in RAG?",
+      "a": "Sparse retrieval uses traditional keyword matching like BM25, while dense retrieval uses semantic vector embeddings to match the meaning of the query."
+    }
+  ],
+  "excel": [
+    {
+      "q": "What is a Pivot Table?",
+      "a": "A Pivot Table is a data summarization tool that automatically sorts, counts, and totals data stored in a table, allowing for dynamic analysis."
+    },
+    {
+      "q": "Explain the VLOOKUP function.",
+      "a": "VLOOKUP searches for a specified value in the first column of a range and returns a value in the same row from another column you specify."
+    },
+    {
+      "q": "What is the difference between a relative and an absolute cell reference?",
+      "a": "A relative reference changes when copied to another cell, while an absolute reference (using $ signs) remains locked to a specific cell address."
+    },
+    {
+      "q": "What is Conditional Formatting?",
+      "a": "It is a feature that automatically applies visual formatting, like colors or icons, to cells based on their values meeting specific criteria."
+    }
+  ],
+  "power bi": [
+    {
+      "q": "What is Power BI?",
+      "a": "Power BI is a business analytics service by Microsoft that provides interactive visualizations and business intelligence capabilities to create dashboards and reports."
+    },
+    {
+      "q": "What is DAX?",
+      "a": "Data Analysis Expressions (DAX) is the formula language used in Power BI to create custom calculations, aggregations, and measures."
+    },
+    {
+      "q": "Explain the difference between a calculated column and a measure.",
+      "a": "A calculated column computes a value for each row and stores it in the model, while a measure calculates aggregations dynamically on the fly based on filters."
+    },
+    {
+      "q": "What is Power Query used for?",
+      "a": "Power Query is the data connectivity and preparation tool within Power BI used to extract, transform, and load (ETL) data from various sources."
+    }
+  ],
+  "tableau": [
+    {
+      "q": "What is a dashboard in Tableau?",
+      "a": "A dashboard is a consolidated display of multiple worksheets and related information in a single place, allowing for simultaneous comparison of different data views."
+    },
+    {
+      "q": "Explain the difference between discrete and continuous fields in Tableau.",
+      "a": "Discrete fields (blue pills) contain finite, distinct values that create headers, while continuous fields (green pills) contain infinite values that create continuous axes."
+    },
+    {
+      "q": "What is a parameter in Tableau?",
+      "a": "A parameter is a dynamic value that can replace constant values in calculations, filters, and reference lines, allowing users to interactively change the data view."
+    },
+    {
+      "q": "How does a join differ from data blending in Tableau?",
+      "a": "A join combines tables at the database level before bringing data into Tableau, whereas data blending combines data from multiple sources within Tableau after aggregation."
+    }
+  ],
+  "apache spark": [
+    {
+      "q": "What is Apache Spark?",
+      "a": "Apache Spark is an open-source, distributed computing system designed for fast, large-scale data processing and analytics in memory."
+    },
+    {
+      "q": "What is an RDD?",
+      "a": "A Resilient Distributed Dataset (RDD) is Spark's fundamental data structure, representing an immutable, partitioned collection of elements that can be operated on in parallel."
+    },
+    {
+      "q": "Explain lazy evaluation in Spark.",
+      "a": "Spark delays the execution of transformations until an action is called, allowing it to optimize the physical execution plan before processing data."
+    },
+    {
+      "q": "What is a Spark DataFrame?",
+      "a": "It is a distributed collection of data organized into named columns, providing a higher-level API than RDDs and utilizing the Catalyst optimizer for performance."
+    }
+  ],
+  "apache kafka": [
+    {
+      "q": "What is Apache Kafka?",
+      "a": "Kafka is a distributed event streaming platform used for building real-time data pipelines and streaming applications."
+    },
+    {
+      "q": "Explain topics and partitions in Kafka.",
+      "a": "A topic is a category to which records are published. Topics are divided into partitions, which allow data to be split across multiple brokers for scalability and parallel processing."
+    },
+    {
+      "q": "What is a Consumer Group?",
+      "a": "A consumer group is a set of consumers that cooperate to consume data from a topic, where each partition is assigned to exactly one consumer within the group."
+    },
+    {
+      "q": "What role does Zookeeper play in older Kafka clusters?",
+      "a": "ZooKeeper manages and coordinates the Kafka brokers, handling metadata, leader elections, and topic configurations."
+    }
+  ],
+  "apache airflow": [
+    {
+      "q": "What is Apache Airflow used for?",
+      "a": "Airflow is an open-source platform used to programmatically author, schedule, and monitor data workflows and pipelines."
+    },
+    {
+      "q": "What is a DAG in Airflow?",
+      "a": "A Directed Acyclic Graph (DAG) represents a workflow in Airflow, mapping out tasks and their dependencies without creating infinite loops."
+    },
+    {
+      "q": "What is an Operator?",
+      "a": "An Operator defines a single task in a DAG, determining what actually executes, such as running a Python script, executing SQL, or making an API call."
+    },
+    {
+      "q": "Explain the Airflow Scheduler.",
+      "a": "The Scheduler monitors all tasks and DAGs, determining when their dependencies have been met and submitting them to executors to run."
+    }
+  ],
+  "data pipelines": [
+    {
+      "q": "What is a data pipeline?",
+      "a": "A data pipeline is a series of automated processes that extract data from multiple sources, transform it, and load it into a centralized storage destination."
+    },
+    {
+      "q": "What does ETL stand for?",
+      "a": "Extract, Transform, Load. It is a data integration process that takes raw data, cleans and structures it, and writes it to a target database or warehouse."
+    },
+    {
+      "q": "How does ELT differ from ETL?",
+      "a": "In ELT (Extract, Load, Transform), raw data is loaded directly into the destination first, and transformations are handled within the target database's compute engine."
+    },
+    {
+      "q": "What is data orchestration?",
+      "a": "Data orchestration is the automated coordination and scheduling of complex data pipeline tasks across different systems to ensure they run in the correct sequence."
+    }
+  ],
+  "cloud": [
+    {
+      "q": "What is Cloud Computing?",
+      "a": "It is the delivery of computing services, including servers, storage, databases, and software, over the internet to offer faster innovation and flexible resources."
+    },
+    {
+      "q": "Explain the difference between IaaS, PaaS, and SaaS.",
+      "a": "IaaS provides raw infrastructure (like VMs), PaaS provides a platform for developers to build apps, and SaaS provides fully managed software directly to end users."
+    },
+    {
+      "q": "What is auto-scaling?",
+      "a": "Auto-scaling is a cloud computing feature that automatically adjusts the number of active computing resources based on current traffic and server load."
+    },
+    {
+      "q": "What is serverless computing?",
+      "a": "It is a cloud execution model where the cloud provider dynamically manages the allocation of machine resources, meaning developers do not have to manage servers at all."
+    }
+  ],
+  "docker": [
+    {
+      "q": "What is a Docker container?",
+      "a": "A container is a lightweight, standalone package that includes everything needed to run a piece of software, including the code, libraries, and settings."
+    },
+    {
+      "q": "What is a Dockerfile?",
+      "a": "A Dockerfile is a text document containing instructions on how to build a Docker image layer by layer."
+    },
+    {
+      "q": "What is the difference between an Image and a Container?",
+      "a": "An image is an immutable blueprint or template, while a container is a running instance of that image."
+    },
+    {
+      "q": "What is Docker Compose?",
+      "a": "Docker Compose is a tool used to define and run multi-container applications using a single YAML configuration file."
+    }
+  ],
+  "kubernetes": [
+    {
+      "q": "What is Kubernetes?",
+      "a": "Kubernetes is an open-source container orchestration platform that automates the deployment, scaling, and management of containerized applications."
+    },
+    {
+      "q": "What is a Pod in Kubernetes?",
+      "a": "A Pod is the smallest deployable computing unit in Kubernetes, representing a single instance of a running process and containing one or more containers."
+    },
+    {
+      "q": "Explain the role of the Kubelet.",
+      "a": "The kubelet is an agent that runs on each worker node, ensuring that containers are running and healthy inside their assigned Pods."
+    },
+    {
+      "q": "What is a Kubernetes Service?",
+      "a": "A Service is an abstraction that defines a logical set of Pods and a policy by which to access them, providing a stable IP address and load balancing."
+    }
+  ],
+  "ci/cd": [
+    {
+      "q": "What does CI/CD stand for?",
+      "a": "Continuous Integration and Continuous Deployment (or Continuous Delivery)."
+    },
+    {
+      "q": "What is the primary goal of Continuous Integration?",
+      "a": "To merge developers' code changes into a central repository frequently, accompanied by automated builds and tests to detect errors quickly."
+    },
+    {
+      "q": "What is the difference between Continuous Delivery and Continuous Deployment?",
+      "a": "Continuous Delivery ensures code is always in a deployable state requiring manual approval to push, while Continuous Deployment automatically pushes every validated change to production."
+    },
+    {
+      "q": "Name a common benefit of implementing CI/CD.",
+      "a": "It accelerates software release cycles, reduces manual deployment errors, and provides faster feedback to developers."
+    }
+  ],
+  "mlflow": [
+    {
+      "q": "What is MLflow?",
+      "a": "MLflow is an open-source platform for managing the end-to-end machine learning lifecycle, including experimentation, reproducibility, and deployment."
+    },
+    {
+      "q": "What does MLflow Tracking do?",
+      "a": "It logs parameters, code versions, metrics, and output files from machine learning runs to compare experiments visually."
+    },
+    {
+      "q": "What is the MLflow Model Registry?",
+      "a": "It is a centralized model store that manages the full lifecycle of an MLflow model, including versioning, stage transitions, and annotations."
+    },
+    {
+      "q": "How does MLflow handle model packaging?",
+      "a": "It packages machine learning models in a standard format that can be used by various downstream tools, creating a REST API or Docker image easily."
+    }
+  ],
+  "nlp": [
+    {
+      "q": "What is Natural Language Processing?",
+      "a": "NLP is a branch of AI focused on giving computers the ability to understand, interpret, and generate human language."
+    },
+    {
+      "q": "What is tokenization in NLP?",
+      "a": "Tokenization is the process of breaking down a large paragraph of text into smaller, individual pieces like words, subwords, or sentences."
+    },
+    {
+      "q": "Explain the difference between stemming and lemmatization.",
+      "a": "Stemming chops off the ends of words to find the root, while lemmatization uses vocabulary rules to return the proper dictionary form of the word."
+    },
+    {
+      "q": "What is TF-IDF?",
+      "a": "Term Frequency-Inverse Document Frequency is a statistical measure that evaluates how relevant a word is to a document within a larger collection of documents."
+    }
+  ],
+  "transformers": [
+    {
+      "q": "What is a Transformer model?",
+      "a": "A Transformer is a neural network architecture introduced in the 'Attention Is All You Need' paper, relying entirely on self-attention mechanisms to process sequential data."
+    },
+    {
+      "q": "How does the Self-Attention mechanism work?",
+      "a": "It allows the model to weigh the importance of different words in an input sequence simultaneously, capturing long-range dependencies and context."
+    },
+    {
+      "q": "What is Positional Encoding?",
+      "a": "Because Transformers process all tokens simultaneously instead of sequentially, positional encoding adds mathematical vectors to tokens to inject information about their absolute or relative position."
+    },
+    {
+      "q": "What is the difference between an Encoder and a Decoder in Transformers?",
+      "a": "The Encoder processes and creates representations of the input sequence, while the Decoder uses those representations to generate the output sequence."
+    }
+  ],
+  "hugging face": [
+    {
+      "q": "What is Hugging Face?",
+      "a": "Hugging Face is an open-source hub and community platform providing pre-trained deep learning models, datasets, and libraries specifically for AI."
+    },
+    {
+      "q": "What is the Transformers library by Hugging Face?",
+      "a": "It is a popular open-source Python library providing APIs and tools to easily download and train state-of-the-art pre-trained models."
+    },
+    {
+      "q": "What is the Hugging Face Pipeline API?",
+      "a": "It is a high-level API that abstracts away the complex code needed to perform tasks like sentiment analysis, question answering, and text generation into a single function call."
+    },
+    {
+      "q": "How does Hugging Face handle tokenization?",
+      "a": "It provides optimized Tokenizer classes that automatically handle model-specific subword tokenization strategies like Byte-Pair Encoding (BPE)."
+    }
+  ],
+  "computer vision": [
+    {
+      "q": "What is Computer Vision?",
+      "a": "It is a field of AI that trains computers to extract meaningful information from digital images, videos, and other visual inputs."
+    },
+    {
+      "q": "Explain the difference between Object Detection and Image Classification.",
+      "a": "Image classification assigns a single label to an entire image, while object detection identifies multiple objects within an image and draws bounding boxes around them."
+    },
+    {
+      "q": "What is semantic segmentation?",
+      "a": "Semantic segmentation classifies every single pixel in an image into a category, outlining the exact shape of objects rather than just drawing a bounding box."
+    },
+    {
+      "q": "What is data augmentation in computer vision?",
+      "a": "It is the technique of artificially expanding a training dataset by applying random transformations like flipping, rotating, and cropping to the original images."
+    }
+  ],
+  "opencv": [
+    {
+      "q": "What is OpenCV?",
+      "a": "Open Source Computer Vision Library (OpenCV) is an open-source software library built for real-time image processing and computer vision tasks."
+    },
+    {
+      "q": "How does OpenCV represent images internally?",
+      "a": "OpenCV represents images as multi-dimensional NumPy arrays, where each element corresponds to pixel intensity values."
+    },
+    {
+      "q": "What color space does OpenCV use by default when loading an image?",
+      "a": "OpenCV reads images in the BGR (Blue, Green, Red) format by default, instead of the standard RGB format."
+    },
+    {
+      "q": "What is edge detection?",
+      "a": "Edge detection is an image processing technique used to identify points in an image where the brightness changes sharply, typically implemented in OpenCV using the Canny algorithm."
+    }
+  ],
+  "cnns": [
+    {
+      "q": "What is a Convolutional Neural Network (CNN)?",
+      "a": "A CNN is a deep learning architecture primarily used for processing grid-like topology data, such as images, using convolutional layers to extract features."
+    },
+    {
+      "q": "What is the purpose of a Convolutional Layer?",
+      "a": "It applies mathematical filters (kernels) over the input image to detect spatial hierarchies of features like edges, textures, and patterns."
+    },
+    {
+      "q": "Explain Max Pooling.",
+      "a": "Max pooling is a downsampling operation that reduces the spatial dimensions of an image by sliding a window across the feature map and keeping only the maximum value in that region."
+    },
+    {
+      "q": "What is stride in a CNN?",
+      "a": "Stride is the number of pixels by which a filter shifts across the input image matrix during the convolution operation."
+    }
+  ],
+  "image processing": [
+    {
+      "q": "What is an image histogram?",
+      "a": "An image histogram is a graphical representation of the tonal distribution in a digital image, plotting the number of pixels for each tonal value."
+    },
+    {
+      "q": "What is image thresholding?",
+      "a": "Thresholding is a simple segmentation method that converts a grayscale image into a binary image by comparing pixel values against a set threshold."
+    },
+    {
+      "q": "What is a Gaussian Blur?",
+      "a": "Gaussian Blur is a filter used in image processing to reduce image noise and detail, applying a Gaussian function to calculate the transformation of each pixel."
+    },
+    {
+      "q": "Explain morphological operations.",
+      "a": "Morphological operations are a set of non-linear operations that process images based on shapes, such as erosion (shrinking) and dilation (expanding) of boundaries."
+    }
+  ],
+  "html": [
+    {
+      "q": "What is the purpose of HTML?",
+      "a": "HTML provides the basic structure and content of a webpage using elements and tags."
+    },
+    {
+      "q": "What is the difference between inline and block-level elements?",
+      "a": "Block elements start on a new line and take up the full width available, while inline elements only take up as much width as necessary."
+    },
+    {
+      "q": "What are semantic HTML tags?",
+      "a": "Semantic tags like header, article, and footer clearly describe their meaning to both the browser and the developer."
+    },
+    {
+      "q": "What is Local Storage?",
+      "a": "Local storage is a web storage object that allows JavaScript to store data natively in the browser with no expiration date."
+    }
+  ],
+  "css": [
+    {
+      "q": "What is a CSS class selector?",
+      "a": "A class selector finds elements with a specific class attribute and applies visual styles to them, denoted by a starting period."
+    },
+    {
+      "q": "Explain the CSS Box Model.",
+      "a": "The box model wraps every HTML element and consists of margins, borders, padding, and the actual content."
+    },
+    {
+      "q": "What is the difference between Flexbox and Grid?",
+      "a": "Flexbox is designed for one-dimensional layouts in a single row or column, while Grid is for two-dimensional layouts using both rows and columns."
+    },
+    {
+      "q": "What is CSS specificity?",
+      "a": "Specificity is the set of rules applied by browsers to determine which CSS styles are applied to an element when multiple conflicting rules target it."
+    }
+  ],
+  "javascript": [
+    {
+      "q": "What is the DOM?",
+      "a": "The Document Object Model (DOM) is an interface that represents the web page as a tree of objects so JavaScript code can modify it."
+    },
+    {
+      "q": "Explain the difference between 'let' and 'const'.",
+      "a": "'let' allows you to declare variables that can be reassigned later, while 'const' is used for variables that should never change."
+    },
+    {
+      "q": "What is a Promise in JavaScript?",
+      "a": "A Promise is an object representing the eventual completion or failure of an asynchronous operation."
+    },
+    {
+      "q": "What is a closure?",
+      "a": "A closure is a feature where an inner function has access to the outer function's variables, even after the outer function has finished executing."
+    }
+  ],
+  "react": [
+    {
+      "q": "What is a component in React?",
+      "a": "A component is a reusable, independent piece of UI that returns HTML-like code to build the user interface."
+    },
+    {
+      "q": "What is the useState hook?",
+      "a": "useState is a hook that allows you to add and track dynamic data or state variables inside a functional component."
+    },
+    {
+      "q": "What is the Virtual DOM?",
+      "a": "It is a lightweight copy of the actual DOM. React updates the virtual DOM first, compares it to the real one, and only re-renders the changed parts."
+    },
+    {
+      "q": "Explain props vs. state.",
+      "a": "Props are read-only data passed from a parent to a child component, while state is local, mutable data managed within the component itself."
+    }
+  ],
+  "typescript": [
+    {
+      "q": "What is TypeScript?",
+      "a": "TypeScript is a syntactic superset of JavaScript that adds static typing, allowing developers to catch errors at compile time rather than runtime."
+    },
+    {
+      "q": "What is an Interface in TypeScript?",
+      "a": "An interface is a structure that defines the contract or shape of an object, specifying the types of properties and methods it must have."
+    },
+    {
+      "q": "Explain the difference between 'any' and 'unknown'.",
+      "a": "Both can hold any value, but 'unknown' is safer because TypeScript forces you to perform type checking before you can operate on an 'unknown' variable."
+    },
+    {
+      "q": "What are Generics?",
+      "a": "Generics allow you to create reusable components and functions that can work over a variety of different types rather than a single fixed type."
+    }
+  ],
+  "responsive design": [
+    {
+      "q": "What is responsive web design?",
+      "a": "It is an approach to web design that makes web pages render well on a variety of devices and window or screen sizes."
+    },
+    {
+      "q": "What are CSS media queries?",
+      "a": "Media queries are CSS rules used to apply different styling to elements based on the characteristics of the device, such as its screen width or resolution."
+    },
+    {
+      "q": "What is a viewport meta tag?",
+      "a": "It is an HTML tag that gives the browser instructions on how to control the page's dimensions and scaling, essential for mobile responsiveness."
+    },
+    {
+      "q": "Explain the mobile-first design approach.",
+      "a": "It is a strategy where you design and code the layout for the smallest mobile screens first, and then use media queries to add layout complexity for larger screens."
+    }
+  ],
+  "git": [
+    {
+      "q": "What is the difference between git pull and git fetch?",
+      "a": "Git fetch downloads new changes from the remote server, while git pull downloads the changes and immediately merges them into your local files."
+    },
+    {
+      "q": "What is a merge conflict?",
+      "a": "A merge conflict occurs when two branches change the exact same lines of code, requiring the developer to manually choose which change to keep."
+    },
+    {
+      "q": "What does 'git commit' do?",
+      "a": "It saves a snapshot of your staged changes to the local repository's history."
+    },
+    {
+      "q": "What is a Git branch?",
+      "a": "A branch is an independent line of development that allows you to work on features safely without affecting the main codebase."
+    }
+  ],
+  "rest api": [
+    {
+      "q": "What is a REST API?",
+      "a": "Representational State Transfer (REST) is an architectural style for APIs that uses standard HTTP methods to interact with resources over the web."
+    },
+    {
+      "q": "Explain the difference between a GET and POST request.",
+      "a": "A GET request retrieves data from a server, while a POST request sends data to the server to create or update a resource."
+    },
+    {
+      "q": "What are HTTP status codes?",
+      "a": "They are standardized numbers returned by the server indicating the result of a request, such as 200 for Success, 404 for Not Found, or 500 for Server Error."
+    },
+    {
+      "q": "What does statelessness mean in REST?",
+      "a": "Statelessness means that every request from the client to the server must contain all the information needed to understand and process it, without relying on saved server sessions."
+    }
+  ],
+  "node.js": [
+    {
+      "q": "What is Node.js and how does it differ from traditional web servers?",
+      "a": "Node.js is a runtime environment that allows executing JavaScript on the backend. Unlike traditional multi-threaded servers, it uses a single-threaded, non-blocking, event-driven architecture."
+    },
+    {
+      "q": "Explain the Event Loop in Node.js.",
+      "a": "The event loop handles asynchronous callbacks in Node.js, offloading operations to the system kernel whenever possible so the main thread remains unblocked."
+    },
+    {
+      "q": "What is 'callback hell' and how do you avoid it?",
+      "a": "Callback hell occurs when multiple asynchronous operations are deeply nested, making code hard to read. It is avoided by using Promises or async/await syntax."
+    },
+    {
+      "q": "What is the purpose of the package.json file?",
+      "a": "It holds metadata relevant to the project and manages the project's dependencies, scripts, and versioning."
+    }
+  ],
+  "system design": [
+    {
+      "q": "Explain the CAP Theorem.",
+      "a": "The CAP theorem states that a distributed data store can only simultaneously provide two of three guarantees: Consistency, Availability, and Partition tolerance."
+    },
+    {
+      "q": "What is the difference between vertical and horizontal scaling?",
+      "a": "Vertical scaling (scaling up) adds more power (CPU, RAM) to an existing machine, while horizontal scaling (scaling out) adds more machines to the pool of resources."
+    },
+    {
+      "q": "What is a Load Balancer?",
+      "a": "A load balancer distributes incoming network traffic across a group of backend servers to ensure no single server becomes overwhelmed, improving responsiveness and availability."
+    },
+    {
+      "q": "Why is caching important in system design?",
+      "a": "Caching temporarily stores frequently accessed data in fast memory (like RAM), drastically reducing database load and decreasing latency for the end user."
+    }
+  ],
+  "redis": [
+    {
+      "q": "What is Redis?",
+      "a": "Redis is an open-source, in-memory data structure store used as a database, cache, message broker, and streaming engine."
+    },
+    {
+      "q": "Explain the Pub/Sub model in Redis.",
+      "a": "Publish/Subscribe is a messaging paradigm where senders (publishers) push messages to channels, and receivers (subscribers) listen to those channels without knowing about the publishers."
+    },
+    {
+      "q": "How does Redis handle persistence?",
+      "a": "Redis offers two persistence options: RDB (Redis Database), which takes point-in-time snapshots, and AOF (Append Only File), which logs every write operation."
+    },
+    {
+      "q": "What are Redis eviction policies?",
+      "a": "Eviction policies determine how Redis frees up memory when it hits its limit, using algorithms like LRU (Least Recently Used) or LFU (Least Frequently Used)."
+    }
+  ],
+  "microservices": [
+    {
+      "q": "What is the difference between a Monolithic and Microservices architecture?",
+      "a": "A monolith builds all components into a single unified codebase and application, while microservices separate the application into small, independent, loosely coupled services."
+    },
+    {
+      "q": "What is an API Gateway?",
+      "a": "An API Gateway is a server that acts as a single entry point for clients, routing requests to the appropriate microservices, handling authentication, and rate limiting."
+    },
+    {
+      "q": "Explain Service Discovery.",
+      "a": "Service discovery is a mechanism that allows microservices to dynamically find each other's network locations (IP addresses and ports) as they scale up or down."
+    },
+    {
+      "q": "What is the Saga pattern?",
+      "a": "The Saga pattern manages data consistency across microservices in distributed transaction scenarios by using a sequence of local transactions and compensating actions if one fails."
+    }
+  ],
+  "linux": [
+    {
+      "q": "What is an inode in Linux?",
+      "a": "An inode is a data structure on a filesystem that stores metadata about a file or directory, such as its size, permissions, and physical location on the disk, but not its name."
+    },
+    {
+      "q": "Explain the difference between a hard link and a symbolic (soft) link.",
+      "a": "A hard link points directly to the inode of a file, meaning the file exists until all hard links are deleted. A soft link points to the original file's path, and breaks if the original is moved or deleted."
+    },
+    {
+      "q": "What does the 'chmod' command do?",
+      "a": "The chmod command changes the read, write, and execute permissions of a file or directory for the owner, group, and others."
+    },
+    {
+      "q": "What is the purpose of the 'grep' command?",
+      "a": "Grep is a command-line utility used to search for specific plain-text data sets or patterns within files using regular expressions."
+    }
+  ],
+  "mongodb": [
+    {
+      "q": "How does MongoDB differ from a relational database?",
+      "a": "MongoDB is a NoSQL database that stores data in flexible, JSON-like BSON documents instead of strict tables and rows, allowing for dynamic schemas."
+    },
+    {
+      "q": "What is a Replica Set?",
+      "a": "A replica set in MongoDB is a group of mongod processes that maintain the same data set, providing redundancy, high availability, and failover capabilities."
+    },
+    {
+      "q": "Explain the Aggregation Pipeline.",
+      "a": "The aggregation pipeline is a framework for data aggregation modeled on the concept of data processing pipelines, where documents pass through multiple stages that filter, group, and transform them."
+    },
+    {
+      "q": "Why are indexes important in MongoDB?",
+      "a": "Indexes support the efficient execution of queries; without them, MongoDB must scan every document in a collection to select those that match the query statement."
+    }
+  ],
+  "redux": [
+    {
+      "q": "What are the core principles of Redux?",
+      "a": "Redux relies on a single source of truth (the store), state is read-only and can only be changed by emitting actions, and changes are made using pure functions called reducers."
+    },
+    {
+      "q": "What is a Reducer?",
+      "a": "A reducer is a pure function that takes the current state and an action as arguments, and returns the new, updated state tree."
+    },
+    {
+      "q": "What is an Action in Redux?",
+      "a": "An action is a plain JavaScript object that describes what happened in the application, and it must contain a 'type' property."
+    },
+    {
+      "q": "Explain the role of middleware like Redux Thunk.",
+      "a": "Middleware extends Redux with custom functionality. Redux Thunk specifically allows you to write action creators that return a function instead of an action, enabling asynchronous logic like API calls."
+    }
+  ],
+  "testing": [
+    {
+      "q": "What is the difference between Unit Testing and Integration Testing?",
+      "a": "Unit testing verifies individual components or functions in isolation, while integration testing checks if different modules or services work together correctly."
+    },
+    {
+      "q": "What is Test-Driven Development (TDD)?",
+      "a": "TDD is a software development process where you write the failing test cases first, and then write the minimum amount of code required to make those tests pass."
+    },
+    {
+      "q": "What is mocking in testing?",
+      "a": "Mocking is the process of replacing real objects or functions (like database calls or APIs) with simulated, controlled versions to isolate the code being tested."
+    },
+    {
+      "q": "What does code coverage measure?",
+      "a": "Code coverage is a metric that calculates the percentage of your source code that is executed when a particular test suite runs."
+    }
+  ],
+  "next.js": [
+    {
+      "q": "What is the difference between Server-Side Rendering (SSR) and Static Site Generation (SSG)?",
+      "a": "SSR renders the HTML on the server on each request, making it good for dynamic data. SSG renders HTML at build time, resulting in faster load times for static pages."
+    },
+    {
+      "q": "How does routing work in Next.js?",
+      "a": "Next.js uses a file-system based router; any React component file created inside the 'pages' or 'app' directory automatically becomes a route."
+    },
+    {
+      "q": "What is the purpose of getStaticProps?",
+      "a": "It is an asynchronous function used in Next.js to fetch data at build time for Static Site Generation."
+    },
+    {
+      "q": "What are API routes in Next.js?",
+      "a": "API routes allow you to build public or private RESTful API endpoints directly within a Next.js application by creating serverless functions inside the /api folder."
+    }
+  ],
+  "django": [
+    {
+      "q": "What architecture pattern does Django follow?",
+      "a": "Django follows the MVT (Model-View-Template) pattern, separating database structure, business logic, and presentation."
+    },
+    {
+      "q": "What is the Django ORM?",
+      "a": "The Object-Relational Mapper allows developers to interact with the database using Python objects and code instead of writing raw SQL queries."
+    },
+    {
+      "q": "Explain the difference between makemigrations and migrate.",
+      "a": "makemigrations reads your models and creates migration files recording the changes, while migrate applies those recorded changes to the actual database schema."
+    },
+    {
+      "q": "What is Django middleware?",
+      "a": "Middleware is a framework of hooks into Django's request/response processing globally, used for tasks like authentication, session management, and CSRF protection."
+    }
+  ],
+  "flask": [
+    {
+      "q": "Why is Flask considered a 'microframework'?",
+      "a": "It is called a microframework because it does not require particular tools or libraries, keeping the core simple and extensible rather than forcing an ORM or form validation."
+    },
+    {
+      "q": "What is a Flask Blueprint?",
+      "a": "A Blueprint is a way to organize a Flask application into distinct components, making it easier to manage large applications by grouping related views and routes."
+    },
+    {
+      "q": "What is Jinja2 in Flask?",
+      "a": "Jinja2 is the default templating engine used by Flask to render dynamic HTML pages by passing Python variables into HTML files."
+    },
+    {
+      "q": "Explain the Application Context in Flask.",
+      "a": "The application context keeps track of application-level data (like configuration or database connections) during a request without needing to pass the app object to every function."
+    }
+  ],
+  "fastapi": [
+    {
+      "q": "What is Pydantic and how is it used in FastAPI?",
+      "a": "Pydantic is a data validation library. FastAPI uses it to define data schemas, automatically validating incoming JSON requests and converting data types."
+    },
+    {
+      "q": "Why is FastAPI considered faster than standard Flask or Django?",
+      "a": "FastAPI is built on Starlette and supports asynchronous programming (async/await) out of the box, allowing for high-throughput, non-blocking I/O operations."
+    },
+    {
+      "q": "How does FastAPI handle API documentation?",
+      "a": "FastAPI automatically generates interactive Swagger UI and ReDoc documentation pages based on the Python type hints and Pydantic models."
+    },
+    {
+      "q": "Explain Dependency Injection in FastAPI.",
+      "a": "It is a built-in system where you define functions (dependencies) that are evaluated before a route runs, useful for sharing logic like database sessions or authentication."
+    }
+  ],
+  "celery": [
+    {
+      "q": "What is Celery?",
+      "a": "Celery is an asynchronous task queue and job queue based on distributed message passing, used to run background tasks outside the main HTTP request cycle."
+    },
+    {
+      "q": "What is a Message Broker in the context of Celery?",
+      "a": "A message broker (like RabbitMQ or Redis) is a separate service that transports messages between the web application sending the task and the Celery worker executing it."
+    },
+    {
+      "q": "What is a Celery Worker?",
+      "a": "A worker is a background process that listens to the message broker, picks up tasks from the queue, and executes the Python code."
+    },
+    {
+      "q": "What is Celery Beat?",
+      "a": "Celery Beat is the built-in scheduler that kicks off tasks at regular intervals, similar to a cron job."
+    }
+  ],
+  "java": [
+    {
+      "q": "What is the difference between JDK, JRE, and JVM?",
+      "a": "JDK provides tools to develop Java apps. JRE provides the libraries to run them. JVM is the engine that actually executes the compiled Java bytecode on the host OS."
+    },
+    {
+      "q": "What are the four pillars of Object-Oriented Programming?",
+      "a": "Encapsulation, Inheritance, Polymorphism, and Abstraction."
+    },
+    {
+      "q": "Explain the difference between an Interface and an Abstract Class in Java.",
+      "a": "An abstract class can have state and non-abstract methods but allows only single inheritance. An interface defines a contract, can be multiply implemented, and (before Java 8) contained only abstract methods."
+    },
+    {
+      "q": "How does Garbage Collection work in Java?",
+      "a": "The JVM automatically identifies objects in the heap memory that are no longer reachable by the application and deletes them to free up space."
+    }
+  ],
+  "spring boot": [
+    {
+      "q": "What is the primary advantage of Spring Boot?",
+      "a": "Spring Boot radically simplifies application setup through auto-configuration and embedded servers (like Tomcat), removing the need for complex XML configurations."
+    },
+    {
+      "q": "What does the @SpringBootApplication annotation do?",
+      "a": "It is a convenience annotation that combines @Configuration, @EnableAutoConfiguration, and @ComponentScan to bootstrap the application."
+    },
+    {
+      "q": "Explain Dependency Injection in the Spring context.",
+      "a": "Dependency Injection is a design pattern where the Spring IoC container creates objects (beans) and automatically injects them into other objects that need them, reducing tight coupling."
+    },
+    {
+      "q": "What is Spring MVC?",
+      "a": "Spring MVC is a framework module that provides a Model-View-Controller architecture for building web applications and RESTful web services."
+    }
+  ],
+  "maven": [
+    {
+      "q": "What is the pom.xml file?",
+      "a": "The Project Object Model (POM) is an XML file that contains project configuration, metadata, and the list of dependencies required to build the project."
+    },
+    {
+      "q": "Explain the difference between a Maven Phase and a Goal.",
+      "a": "A phase is a step in the build lifecycle (like compile, test, package), while a goal represents a specific task plugin executed within that phase."
+    },
+    {
+      "q": "What are transitive dependencies?",
+      "a": "Transitive dependencies occur when a library your project depends on requires other libraries; Maven automatically downloads these nested dependencies for you."
+    },
+    {
+      "q": "What is the difference between the local repository and central repository in Maven?",
+      "a": "The central repo is an online repository provided by Maven to download libraries. The local repo is a directory on your machine where those downloaded libraries are cached."
+    }
+  ],
+  "junit": [
+    {
+      "q": "What does the @Test annotation do in JUnit?",
+      "a": "It tells the JUnit framework that the public void method to which it is attached can be run as a test case."
+    },
+    {
+      "q": "Explain the difference between @BeforeEach and @BeforeAll.",
+      "a": "@BeforeEach executes before every single test method in a class. @BeforeAll must be static and executes only once before all the tests in the class begin."
+    },
+    {
+      "q": "What is an assertion in JUnit?",
+      "a": "An assertion (like assertEquals or assertTrue) is a method used to validate that the expected outcome matches the actual result of the tested code."
+    },
+    {
+      "q": "Why is Mockito often used with JUnit?",
+      "a": "Mockito is used to create dummy implementations (mocks) of interfaces or classes, allowing developers to isolate and test specific components without triggering real database or network calls."
+    }
+  ],
+  "design patterns": [
+    {
+      "q": "What is the Singleton Pattern?",
+      "a": "It is a creational pattern that ensures a class has only one instance while providing a global point of access to that instance."
+    },
+    {
+      "q": "Explain the Factory Method Pattern.",
+      "a": "It is a creational pattern that provides an interface for creating objects in a superclass, but allows subclasses to alter the type of objects that will be created."
+    },
+    {
+      "q": "What is the Observer Pattern?",
+      "a": "It is a behavioral pattern where an object (subject) maintains a list of dependents (observers) and notifies them automatically of any state changes."
+    },
+    {
+      "q": "What is the Decorator Pattern?",
+      "a": "It is a structural pattern that lets you attach new behaviors to objects dynamically by placing them inside wrapper objects that contain the behaviors."
+    }
+  ],
+  "figma": [
+    {
+      "q": "What is the difference between a Component and an Instance in Figma?",
+      "a": "A Component is the master UI element you design. An Instance is a reusable copy of that component; if you update the Component, all Instances update automatically."
+    },
+    {
+      "q": "What is Auto Layout?",
+      "a": "Auto Layout is a property you can add to frames that allows them to automatically resize, stack, and align their contents based on padding and spacing rules, similar to CSS Flexbox."
+    },
+    {
+      "q": "What are Component Variants?",
+      "a": "Variants allow you to group multiple versions of the same component (like hover states or different colors of a button) into a single, easily configurable master component."
+    },
+    {
+      "q": "What is a Vector Network in Figma?",
+      "a": "Unlike traditional vector paths with a single direction, Figma's vector networks allow multiple lines to intersect at a single point, making complex shape creation faster."
+    }
+  ],
+  "ui design": [
+    {
+      "q": "What is visual hierarchy?",
+      "a": "Visual hierarchy is the arrangement of design elements in a way that implies importance, guiding the user's eye through the layout using size, color, contrast, and spacing."
+    },
+    {
+      "q": "Explain the 8pt Grid System.",
+      "a": "It is a layout principle where margins, padding, and UI elements are sized in multiples of 8 pixels, creating consistent, scalable, and mathematically harmonious designs."
+    },
+    {
+      "q": "What is the difference between UI and UX?",
+      "a": "UI (User Interface) focuses on the visual and interactive elements of a product (colors, typography, buttons), while UX (User Experience) focuses on the overall logic, flow, and user satisfaction."
+    },
+    {
+      "q": "Why is color contrast important in UI design?",
+      "a": "High contrast ensures readability and accessibility (a11y) for all users, including those with visual impairments, meeting standards like the WCAG guidelines."
+    }
+  ],
+  "ux research": [
+    {
+      "q": "What is the difference between qualitative and quantitative research?",
+      "a": "Qualitative research observes non-numerical behaviors and motivations (interviews, observation), while quantitative research gathers numerical data to find statistical patterns (surveys, analytics)."
+    },
+    {
+      "q": "What is a User Persona?",
+      "a": "A persona is a fictional character created based on research to represent a specific user type that might use your service, product, or site in a similar way."
+    },
+    {
+      "q": "Explain User Journey Mapping.",
+      "a": "It is the visual visualization of the process a user goes through to achieve a specific goal, highlighting their pain points, emotions, and interactions with the product."
+    },
+    {
+      "q": "What is a Heuristic Evaluation?",
+      "a": "It is a usability inspection method where UX experts evaluate a user interface against a set of recognized usability principles (heuristics) to identify design flaws."
+    }
+  ],
+  "prototyping": [
+    {
+      "q": "What is the difference between low-fidelity and high-fidelity prototypes?",
+      "a": "Low-fidelity prototypes are simple, unstyled representations (like paper sketches) focused on layout, while high-fidelity prototypes are highly interactive, visually complete simulations of the final product."
+    },
+    {
+      "q": "Why build a prototype before writing code?",
+      "a": "Prototyping allows designers to test assumptions, validate user flows, and find usability issues early, which is significantly cheaper and faster than changing coded software."
+    },
+    {
+      "q": "What is an interactive state?",
+      "a": "It refers to how a UI element visually responds when a user interacts with it, such as a button changing color on hover or an input field highlighting on click."
+    },
+    {
+      "q": "What is a user flow?",
+      "a": "It is a flowchart or series of screens that maps out the step-by-step path a user takes to complete a specific task within an application."
+    }
+  ],
+  "user testing": [
+    {
+      "q": "What is A/B Testing?",
+      "a": "A/B testing is a method of comparing two versions of a webpage or app against each other to determine which one performs better based on statistical conversion data."
+    },
+    {
+      "q": "What is the Think-Aloud Protocol?",
+      "a": "It is a testing method where participants are asked to verbalize their thoughts, feelings, and decisions continuously as they navigate through a prototype or application."
+    },
+    {
+      "q": "What is the difference between moderated and unmoderated user testing?",
+      "a": "Moderated testing has a facilitator guiding the user and asking questions in real-time, while unmoderated testing allows the user to complete tasks independently using screen-recording software."
+    },
+    {
+      "q": "What is the primary goal of usability testing?",
+      "a": "To evaluate a product by testing it on representative users to identify design flaws, observe user behavior, and determine user satisfaction."
+    }
+  ],
+  "wireframing": [
+    {
+      "q": "What is a wireframe?",
+      "a": "A wireframe is a two-dimensional skeletal outline of a webpage or app, serving as a structural blueprint focusing on space allocation and content prioritization without styling."
+    },
+    {
+      "q": "Why should you exclude colors and images from a wireframe?",
+      "a": "Removing aesthetics prevents stakeholders from getting distracted by visual details, forcing them to focus strictly on functionality, layout, and user flow."
+    },
+    {
+      "q": "What is the difference between a wireframe and a mockup?",
+      "a": "A wireframe is a structural, low-fidelity outline, whereas a mockup is a static, high-fidelity representation containing final typography, colors, and visual branding."
+    },
+    {
+      "q": "What does 'Lorem Ipsum' represent in wireframing?",
+      "a": "It is standard placeholder text used to simulate how real text will look in a layout before the actual copy is written."
+    }
+  ],
+  "c": [
+    {
+      "q": "What is a pointer in C?",
+      "a": "A pointer is a variable that stores the memory address of another variable, allowing direct memory access and manipulation."
+    },
+    {
+      "q": "Explain the difference between malloc() and calloc().",
+      "a": "Both dynamically allocate memory, but malloc() leaves the memory uninitialized (containing garbage values), while calloc() initializes all allocated bytes to zero."
+    },
+    {
+      "q": "What is a memory leak?",
+      "a": "A memory leak occurs when dynamically allocated memory (using malloc) is no longer needed but is not released back to the system using the free() function."
+    },
+    {
+      "q": "What is the role of the C preprocessor?",
+      "a": "It is a macro processor that transforms the source code before it is compiled, handling directives like #include, #define, and conditional compilation."
+    }
+  ],
+  "c++": [
+    {
+      "q": "What is a virtual function in C++?",
+      "a": "A virtual function is a member function in a base class that can be overridden in a derived class to achieve runtime polymorphism."
+    },
+    {
+      "q": "What does RAII stand for and what does it mean?",
+      "a": "Resource Acquisition Is Initialization. It is a programming idiom where resource allocation is tied to object construction, and deallocation is automatically handled by the object's destructor."
+    },
+    {
+      "q": "Explain the difference between pointers and references in C++.",
+      "a": "A pointer can be null and reassigned to point elsewhere, while a reference must be initialized when created, cannot be null, and cannot be reassigned to another object."
+    },
+    {
+      "q": "What is a template in C++?",
+      "a": "Templates allow you to write generic functions or classes that can operate with any data type, enabling type-safe code reuse without sacrificing performance."
+    }
+  ],
+  "microcontrollers": [
+    {
+      "q": "What is the difference between a microprocessor and a microcontroller?",
+      "a": "A microprocessor contains only the CPU and requires external RAM, ROM, and I/O. A microcontroller has a CPU, memory, and I/O peripherals integrated onto a single chip."
+    },
+    {
+      "q": "What is GPIO?",
+      "a": "General-Purpose Input/Output. These are digital signal pins on a microcontroller that can be programmed to act as either an input (reading sensors) or an output (driving LEDs)."
+    },
+    {
+      "q": "Explain the difference between Polling and Interrupts.",
+      "a": "Polling continuously checks the status of an external device in a loop, wasting CPU cycles. Interrupts allow the CPU to sleep or execute other code until a hardware signal triggers immediate attention."
+    },
+    {
+      "q": "What is the function of an ADC?",
+      "a": "An Analog-to-Digital Converter converts continuous analog signals (like temperature voltage) into discrete digital numbers that the microcontroller can process."
+    }
+  ],
+  "rtos": [
+    {
+      "q": "What is a Real-Time Operating System (RTOS)?",
+      "a": "An RTOS is an operating system designed to process data and execute tasks within a strict, predictable, and deterministic time constraint."
+    },
+    {
+      "q": "What is a Semaphore?",
+      "a": "A semaphore is a signaling mechanism used to control access to a shared resource by multiple tasks in a concurrent system to prevent race conditions."
+    },
+    {
+      "q": "Explain Priority Inversion.",
+      "a": "It is a problematic scenario where a high-priority task is indirectly preempted by a lower-priority task holding a shared resource, effectively inverting their assigned priorities."
+    },
+    {
+      "q": "What is the difference between preemptive and cooperative scheduling?",
+      "a": "In preemptive scheduling, the OS forcibly interrupts tasks to allocate CPU time based on priority. In cooperative scheduling, a task must explicitly yield control to let other tasks run."
+    }
+  ],
+  "electronics": [
+    {
+      "q": "What is Ohm's Law?",
+      "a": "Ohm's Law states that the current flowing through a conductor is directly proportional to the voltage applied across it and inversely proportional to its resistance (V = I * R)."
+    },
+    {
+      "q": "What is the purpose of a pull-up resistor?",
+      "a": "A pull-up resistor connects an input pin to the voltage supply, ensuring the pin reads a known high logic state when an external switch or sensor is open (floating)."
+    },
+    {
+      "q": "What does a capacitor do?",
+      "a": "A capacitor stores and releases electrical energy in an electric field. It blocks direct current (DC) but allows alternating current (AC) to pass, often used for filtering noise."
+    },
+    {
+      "q": "What is PWM?",
+      "a": "Pulse Width Modulation is a technique used to encode analog levels using a digital signal by varying the duty cycle (the percentage of time the signal is HIGH) over a fixed frequency."
+    }
+  ],
+  "debugging": [
+    {
+      "q": "What is a breakpoint?",
+      "a": "A breakpoint is an intentional stopping place placed in the code by a developer, allowing them to pause execution and inspect the state of variables and memory at that exact moment."
+    },
+    {
+      "q": "What is a Call Stack?",
+      "a": "The call stack is a data structure that keeps track of the sequence of active subroutines or function calls currently executing in the program, useful for tracing where an error originated."
+    },
+    {
+      "q": "What is a race condition?",
+      "a": "A race condition occurs in multi-threaded software when the system's behavior depends on the unpredictable sequence or timing of uncontrollable events, causing inconsistent results."
+    },
+    {
+      "q": "How do you narrow down a segmentation fault in C/C++?",
+      "a": "Segmentation faults usually involve illegal memory access. You can narrow them down using a debugger like GDB to inspect the core dump, trace the call stack, and check for null or uninitialized pointers."
+    }
+  ],
+  "assembly": [
+    {
+      "q": "What is Assembly Language?",
+      "a": "It is a low-level programming language where instructions have a strong one-to-one correspondence with the architecture's machine code instructions."
+    },
+    {
+      "q": "What is a register?",
+      "a": "A register is an extremely fast, small memory location built directly into the CPU, used to store data, addresses, or instructions currently being processed."
+    },
+    {
+      "q": "What is the Instruction Set Architecture (ISA)?",
+      "a": "The ISA is the abstract model of a computer that defines the supported data types, registers, addressing modes, and exact commands the CPU can execute (e.g., x86 or ARM)."
+    },
+    {
+      "q": "What is the Stack Pointer?",
+      "a": "The stack pointer is a specific CPU register that stores the memory address of the top of the stack, used to manage function calls and local variable scope."
+    }
+  ],
+  "iot protocols": [
+    {
+      "q": "Explain the difference between MQTT and HTTP in IoT.",
+      "a": "HTTP is a heavy, synchronous, request-response protocol. MQTT is a lightweight, asynchronous, publish-subscribe protocol designed for low-bandwidth, unreliable networks."
+    },
+    {
+      "q": "What is CoAP?",
+      "a": "Constrained Application Protocol (CoAP) is a specialized web transfer protocol for use with constrained nodes and networks in IoT, operating over UDP rather than TCP."
+    },
+    {
+      "q": "What is Zigbee?",
+      "a": "Zigbee is a low-power, low-data-rate wireless protocol based on the IEEE 802.15.4 standard, primarily used for creating local mesh networks in smart home and industrial automation."
+    },
+    {
+      "q": "What is Edge Computing in IoT?",
+      "a": "Edge computing processes data locally on the IoT device or a local gateway rather than transmitting all raw data to a centralized cloud, reducing latency and bandwidth usage."
+    }
+  ],
+  "mqtt": [
+    {
+      "q": "What is the role of an MQTT Broker?",
+      "a": "The broker is the central server in MQTT that receives all messages from clients, filters them based on topics, and distributes them to all subscribed clients."
+    },
+    {
+      "q": "Explain Quality of Service (QoS) levels in MQTT.",
+      "a": "QoS 0 delivers at most once (fire and forget), QoS 1 delivers at least once (requires acknowledgment), and QoS 2 delivers exactly once (highest reliability, slowest)."
+    },
+    {
+      "q": "What is an MQTT topic?",
+      "a": "A topic is a UTF-8 string that the broker uses to filter messages for each connected client, structured hierarchically using forward slashes (e.g., house/sensor/temp)."
+    },
+    {
+      "q": "What is a Retained Message in MQTT?",
+      "a": "If a publisher flags a message as retained, the broker stores the last known message on that topic and instantly sends it to any new client that subscribes to it."
+    }
+  ],
+  "networking": [
+    {
+      "q": "What is the OSI Model?",
+      "a": "The Open Systems Interconnection model is a conceptual framework that standardizes the functions of a telecommunication system into seven abstract layers, from Physical (Layer 1) to Application (Layer 7)."
+    },
+    {
+      "q": "Explain the difference between TCP and UDP.",
+      "a": "TCP is connection-oriented, guaranteeing ordered and reliable delivery of data packets. UDP is connectionless, prioritizing speed over reliability, often used for video streaming."
+    },
+    {
+      "q": "What is the purpose of DNS?",
+      "a": "The Domain Name System translates human-readable domain names (like www.google.com) into IP addresses that computers use to identify each other on the network."
+    },
+    {
+      "q": "What is subnetting?",
+      "a": "Subnetting is the practice of dividing a single large network into multiple smaller, manageable logical networks to improve security, performance, and IP address allocation."
+    }
+  ]
+
+}
