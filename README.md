@@ -50,8 +50,8 @@ Scalability: Structured to support future growth, with clean separation between 
 
 6.LEADERBOARD
 
-<img width="1357" height="685" alt="HR_LEADERBOARD" src="https://github.com/user-attachments/assets/802e548b-d941-
-why are images like this here
+<img width="1357" height="685" alt="HR_LEADERBOARD" src="https://github.com/user-attachments/assets/0629c6c4-20da-4430-a1ad-259b921de5e3" />
+
 
 ## Project Directory Structure
 ```text
