@@ -3,87 +3,93 @@ import requests
 import time
 
 BACKEND_URL = "http://127.0.0.1:8000"
-EXAM_DURATION_SECONDS = 600  # 10 minutes
+EXAM_DURATION_SECONDS = 600
 
 def render():
-    # --- 1. PREREQUISITE INITIALIZATION CHECKS ---
-    if not st.session_state.get("predicted_role") or not st.session_state.get("exam_data"):
-        st.title("💻 Technical Assessment Portal")
-        st.warning("⚠️ No active assessment found. Ask your HR Recruiter to generate your test.")
-        return
+    if "view_state" not in st.session_state: st.session_state.view_state = "login"
 
-    if "view_state" not in st.session_state:
-        st.session_state.view_state = "login"
-
-    # --- 2. STATE: LOGIN / INSTRUCTIONS GATE ---
     if st.session_state.view_state == "login":
-        st.title(f"Welcome, {st.session_state.get('current_candidate_name', 'Candidate')}!")
-        st.info(f"Your assessment for **{st.session_state.predicted_role}** is ready.")
-        st.warning("⏱️ **Important:** You will have exactly 10 minutes to complete this exam. Leaving or refreshing the page will reset your progress.")
+        st.title("💻 Technical Assessment Portal")
+        st.info("Please enter your name exactly as it appeared on your resume file (e.g., 'Suhas_Resume' or 'John_Doe').")
         
-        if st.button("Start Exam Now", type="primary"):
-            st.session_state.start_time = time.time()
-            st.session_state.view_state = "exam"
-            st.rerun()
+        login_name = st.text_input("Candidate Identity Check:")
+        
+        if st.button("Fetch My Assessment"):
+            if not login_name:
+                st.warning("Please enter your name.")
+                return
+                
+            with st.spinner("Locating your HR screening file..."):
+                try:
+                    res = requests.get(f"{BACKEND_URL}/get-candidate-test?name={login_name}").json()
+                    
+                    if res.get("status") == "not_found":
+                        st.error("⚠️ No active assessment found. Make sure HR has processed your resume and you spelled your name correctly.")
+                    elif res.get("status") == "rejected":
+                        st.error("Thank you for your interest. Unfortunately, we are not hiring for that role currently or your profile did not meet the baseline threshold to move forward.")
+                    else:
+                        st.session_state.current_candidate_name = login_name
+                        st.session_state.predicted_role = res["target_role"]
+                        st.session_state.match_score = res["match_percentage"]
+                        st.session_state.exam_data = res["exam"]
+                        
+                        st.success(f"Assessment found for {login_name}! Target Role: {res['target_role']}")
+                        st.warning("⏱️ You will have exactly 10 minutes. Click below when ready.")
+                        st.session_state.ready_to_start = True
+                except Exception as e:
+                    st.error(f"Backend connection error: {e}")
+                    
+        if st.session_state.get("ready_to_start"):
+            if st.button("Start Exam Now", type="primary"):
+                st.session_state.start_time = time.time()
+                st.session_state.view_state = "exam"
+                st.rerun()
 
-    # --- 3. STATE: ACTIVE ASSESSMENT WITH LIVE TIMER ---
     elif st.session_state.view_state == "exam":
         st.title(f"Technical Interview: {st.session_state.predicted_role}")
         
-        # Calculate dynamic timeline drift
         elapsed = time.time() - st.session_state.start_time
         time_left = EXAM_DURATION_SECONDS - elapsed
         
-        # CRITICAL REFACTOR: Graceful Auto-Timeout Execution Wrapper
         if time_left <= 0:
             st.error("⏳ Time is up! Processing your submission automatically...")
-            
             total_score = 0
-            with st.spinner("Grading saved answers via local models..."):
+            with st.spinner("Grading saved answers..."):
                 for idx, qa in enumerate(st.session_state.exam_data):
-                    # Pull values directly from Streamlit's state tree keys
                     cand_ans = st.session_state.get(f"ans_{idx}", "")
                     try:
                         res = requests.post(f"{BACKEND_URL}/grade-answer", json={
                             "candidate_answer": cand_ans, "golden_answer": qa['a']
                         }).json()
                         total_score += res.get("score", 0.0)
-                    except Exception:
-                        total_score += 0.0
-                        
+                    except:
+                        pass
                 final_avg = total_score / len(st.session_state.exam_data) if st.session_state.exam_data else 0.0
-                
-                # Push incomplete progress values straight to backend storage 
                 try:
                     requests.post(f"{BACKEND_URL}/submit-leaderboard", json={
-                        "candidate_name": st.session_state.get('current_candidate_name', 'Anonymous'),
+                        "candidate_name": st.session_state.current_candidate_name,
                         "predicted_role": st.session_state.predicted_role,
-                        "resume_score": st.session_state.get('match_score', 0.0),
+                        "resume_score": st.session_state.match_score,
                         "interview_score": final_avg
                     })
-                except Exception:
-                    pass
-                
+                except: pass
                 st.session_state.final_score = final_avg
                 st.session_state.view_state = "results"
                 st.rerun()
                 
-        # Render Timer Metrics Bar
         mins, secs = divmod(int(time_left), 60)
         st.warning(f"⏱️ **Time Remaining:** {mins:02d}:{secs:02d}")
         st.progress(max(0.0, min(1.0, time_left / EXAM_DURATION_SECONDS)))
         st.divider()
         
-        # Generate Interactive Questionnaire Elements
         answers = []
         for idx, qa in enumerate(st.session_state.exam_data):
             st.markdown(f"### Q{idx+1} (`{qa['topic']}`)")
             st.markdown(f"**{qa['q']}**")
             ans = st.text_area("Your Answer:", key=f"ans_{idx}", height=140, placeholder="Type your technical solution here...")
             answers.append({"golden": qa['a'], "cand": ans})
-            st.write("") # Layout spacer
+            st.write("")
             
-        # Standard Manual Form Submission
         if st.button("Submit Assessment", type="primary"):
             with st.spinner("Grading answers via local AI models..."):
                 total_score = 0
@@ -93,41 +99,41 @@ def render():
                             "candidate_answer": pair["cand"], "golden_answer": pair["golden"]
                         }).json()
                         total_score += grade.get("score", 0.0)
-                    except Exception:
-                        total_score += 0.0
+                    except: pass
                         
                 final_avg = total_score / len(answers) if answers else 0.0
-                
-                # Push score record matrix up to global leaderboard
                 try:
                     requests.post(f"{BACKEND_URL}/submit-leaderboard", json={
-                        "candidate_name": st.session_state.get('current_candidate_name', 'Anonymous'),
+                        "candidate_name": st.session_state.current_candidate_name,
                         "predicted_role": st.session_state.predicted_role,
-                        "resume_score": st.session_state.get('match_score', 0.0),
+                        "resume_score": st.session_state.match_score,
                         "interview_score": final_avg
                     })
-                except Exception:
-                    st.error("Warning: Could not save final results to leaderboard file storage.")
+                except: pass
                 
                 st.session_state.final_score = final_avg
                 st.session_state.view_state = "results"
                 st.rerun()
 
-    # --- 4. STATE: SCORE EVALUATION REPORT CARD ---
     elif st.session_state.view_state == "results":
         st.title("🏆 Assessment Complete")
-        
-        # Centered visual scoring card
         st.metric(label="Final AI Semantic Score", value=f"{st.session_state.final_score:.1f}%")
         
         if st.session_state.final_score >= 70.0:
-            st.success("✅ **Passed!** You demonstrated excellent technical core competency and keyword alignment.")
+            st.success("✅ **Passed!** You demonstrated excellent technical core competency.")
             st.balloons()
         else:
-            st.error("❌ **Action Required:** Your evaluation score fell under the required 70% baseline threshold. Review core operational concepts for this role.")
+            st.error("❌ **Action Required:** Your evaluation score fell under the required 70% threshold.")
             
         st.divider()
         if st.button("Return to Log In Screen"):
-            # Clear current session tokens smoothly so another candidate can log in immediately
-            st.session_state.clear()
+            st.session_state.user_role = None
+            st.session_state.view_state = "login"
+            
+            
+            candidate_keys = ['current_candidate_name', 'predicted_role', 'match_score', 'exam_data', 'ready_to_start', 'start_time', 'final_score']
+            for key in candidate_keys:
+                if key in st.session_state:
+                    del st.session_state[key]
+                    
             st.rerun()

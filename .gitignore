@@ -1,0 +1,14 @@
+# Ignore local environment files
+.env
+**/ .env
+**/ .env.local
+
+# Ignore Python environment and cache
+venv/
+__pycache__/
+*.pyc
+
+# Ignore data and temporary files
+*.csv
+*.json
+.DS_Store
