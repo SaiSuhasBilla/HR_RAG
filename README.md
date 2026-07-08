@@ -26,22 +26,6 @@ Interactive UI: Built with Streamlit to provide a seamless, responsive experienc
 
 Scalability: Structured to support future growth, with clean separation between frontend services and backend API endpoints.
 
-
-## Project Directory Structure
-```text
-ragg/
-├── backend/          # FastAPI/Python logic and RAG implementation
-│   ├── it_jobs_required_skills.csv
-│   ├── leaderboard.csv
-│   ├── questions.json
-│   └── main.py
-├── frontend/         # Streamlit-based UI for candidates and HR
-│   ├── utils/
-│   ├── views/
-│   └── main.py
-├── .gitignore        
-└── README.md
-
 ## Project Interface
 
 **1. Login Portal**
@@ -61,4 +45,21 @@ ragg/
 
 **6. Leaderboard**
 <img width="600" alt="HR_LEADERBOARD" src="https://github.com/user-attachments/assets/802e548b-d941-4c60-8488-66236b2f4476" />
+
+## Project Directory Structure
+```text
+ragg/
+├── backend/          # FastAPI/Python logic and RAG implementation
+│   ├── it_jobs_required_skills.csv
+│   ├── leaderboard.csv
+│   ├── questions.json
+│   └── main.py
+├── frontend/         # Streamlit-based UI for candidates and HR
+│   ├── utils/
+│   ├── views/
+│   └── main.py
+├── .gitignore        
+└── README.md
+
+
 
