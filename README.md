@@ -28,23 +28,30 @@ Scalability: Structured to support future growth, with clean separation between 
 
 ## Project Interface
 
-**1. Login Portal**
-<img width="600" alt="AI_HR_LOGIN" src="https://github.com/user-attachments/assets/46a8cbbb-099f-4849-8cdc-ed7237c10f89" />
+1.LOGIN VIEW
+<img width="1360" height="686" alt="AI_HR_LOGIN" src="https://github.com/user-attachments/assets/46a8cbbb-099f-4849-8cdc-ed7237c10f89" />
 
-**2. Recruiter Dashboard**
-<img width="600" alt="HR_RECRUITER_DASHBOARD" src="https://github.com/user-attachments/assets/8034feb4-f74c-4333-ae0d-4e7eadeceddd" />
 
-**3. Recruiter RAG Chatbot**
-<img width="600" alt="HR_RAG_QUERY" src="https://github.com/user-attachments/assets/56ef6b10-a3df-41ab-94bf-2aa6504b0a08" />
+2.RECRUITER DASHBOARD
 
-**4. Candidate View**
-<img width="600" alt="Screenshot_8-7-2026_173124_localhost" src="https://github.com/user-attachments/assets/af8ac79a-de91-42a0-8e19-6dbdb268ac50" />
+<img width="1351" height="658" alt="HR_RECRUITER_DASHBOARD" src="https://github.com/user-attachments/assets/8034feb4-f74c-4333-ae0d-4e7eadeceddd" />
 
-**5. Candidate Exam Portal**
-<img width="600" alt="Screenshot_8-7-2026_173723_localhost" src="https://github.com/user-attachments/assets/c8d886a4-dc5d-4437-82f5-638cc0058e57" />
+3.RECRUITER RAG CHATBOT
 
-**6. Leaderboard**
-<img width="600" alt="HR_LEADERBOARD" src="https://github.com/user-attachments/assets/802e548b-d941-4c60-8488-66236b2f4476" />
+<img width="1357" height="679" alt="HR_RAG_QUERY" src="https://github.com/user-attachments/assets/56ef6b10-a3df-41ab-94bf-2aa6504b0a08" />
+
+4.CANDIDATE VIEW
+
+<img width="1357" height="672" alt="Screenshot_8-7-2026_173124_localhost" src="https://github.com/user-attachments/assets/af8ac79a-de91-42a0-8e19-6dbdb268ac50" />
+
+5.CANDIDATE EXAM PORTAL
+
+<img width="1347" height="677" alt="Screenshot_8-7-2026_173723_localhost" src="https://github.com/user-attachments/assets/c8d886a4-dc5d-4437-82f5-638cc0058e57" />
+
+6.LEADERBOARD
+
+<img width="1357" height="685" alt="HR_LEADERBOARD" src="https://github.com/user-attachments/assets/802e548b-d941-
+why are images like this here
 
 ## Project Directory Structure
 ```text
