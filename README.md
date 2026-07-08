@@ -41,3 +41,29 @@ ragg/
 │   └── main.py
 ├── .gitignore        
 └── README.md
+
+1.LOGIN_VIEW
+
+<img width="1360" height="686" alt="AI_HR_LOGIN" src="https://github.com/user-attachments/assets/46a8cbbb-099f-4849-8cdc-ed7237c10f89" />
+
+
+2.RECRUITER DASHBOARD
+
+<img width="1351" height="658" alt="HR_RECRUITER_DASHBOARD" src="https://github.com/user-attachments/assets/8034feb4-f74c-4333-ae0d-4e7eadeceddd" />
+
+3.RECRUITER RAG CHATBOT
+
+<img width="1357" height="679" alt="HR_RAG_QUERY" src="https://github.com/user-attachments/assets/56ef6b10-a3df-41ab-94bf-2aa6504b0a08" />
+
+4.CANDIDATE VIEW
+
+<img width="1357" height="672" alt="Screenshot_8-7-2026_173124_localhost" src="https://github.com/user-attachments/assets/af8ac79a-de91-42a0-8e19-6dbdb268ac50" />
+
+5.CANDIDATE EXAM PORTAL
+
+<img width="1347" height="677" alt="Screenshot_8-7-2026_173723_localhost" src="https://github.com/user-attachments/assets/c8d886a4-dc5d-4437-82f5-638cc0058e57" />
+
+6.LEADERBOARD
+
+<img width="1357" height="685" alt="HR_LEADERBOARD" src="https://github.com/user-attachments/assets/802e548b-d941-4a41-b73d-762ed4e74416" />
+
